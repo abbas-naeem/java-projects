@@ -12,6 +12,9 @@ public class Student {
         return "Amasds";
     }
 
+    public Integer getID() {
+        return 2;
+    }
 
 
 }
