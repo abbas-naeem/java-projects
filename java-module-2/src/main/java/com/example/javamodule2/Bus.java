@@ -3,13 +3,16 @@ package com.example.javamodule2;
 public class Bus {
 
     public static void main(String[] args) {
+        String sentence = "Number of passengers: ";
         int passangers = 0;
         passangers+=9;
-        System.out.println(passangers);
+        System.out.println(sentence + passangers);
         passangers-=5;
-        System.out.println(passangers);
+        System.out.println(sentence + passangers);
         passangers-=4;
-        System.out.println(passangers);
+        System.out.println(sentence + passangers);
+        sentence = "End of shift";
+        System.out.println(sentence);
 
     }
 
