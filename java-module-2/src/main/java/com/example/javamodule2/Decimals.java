@@ -12,6 +12,6 @@ public class Decimals {
     //        int dividend = 25;
     //        int divisor = 2;
     //        System.out.println(dividend/divisor);
-    //        My output would be 12 due to us using int, so avoid using int/long as much as possible during calculations
+    //        My output will be 12 due to us using int, so avoid using int/long as much as possible during calculations
     }
 }
