@@ -1,10 +1,6 @@
-import java.util.Scanner;
-
 public class Workbook511 {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
         System.out.println("Let's play a rolling game.");
         System.out.println("");
         System.out.println("Great, here are the rules: ");
