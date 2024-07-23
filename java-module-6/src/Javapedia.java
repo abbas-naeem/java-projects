@@ -41,8 +41,6 @@ public class Javapedia {
         for (int i = 0; i < data.length; i++) {
             if (person.equals(data[i][0])) {
                 System.out.println(Arrays.toString(data[i]));
-            } else if (i > data.length){
-                System.out.println("This person is not in our records");
             } else {
                 continue;
             }
