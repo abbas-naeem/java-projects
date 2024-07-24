@@ -1,20 +1,26 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Workbook71 {
     public static void main(String[] args) {
-        Workbook71_linkData abbas = new Workbook71_linkData();
+        Workbook71_linkData user = new Workbook71_linkData();
+        Scanner scan = new Scanner(System.in);
 
-        abbas.name = "Muhammad Abbas Naeem";
-        abbas.nationality = "British Pakistani";
-        abbas.dob = "17th March 2011";
+        System.out.print("What is your name: ");
+        user.name = scan.nextLine();
+        System.out.print("What is your nationality: ");
+        user.nationality = scan.nextLine();
+        System.out.print("What is your date of birth: ");
+        user.dob = scan.nextLine();
 
-        abbas.passport[0] = abbas.name;
-        abbas.passport[1] = abbas.nationality;
-        abbas.passport[2] = abbas.dob;
+        user.passport[0] = user.name;
+        user.passport[1] = user.nationality;
+        user.passport[2] = user.dob;
 
-        System.out.println(abbas.name);
-        System.out.println(abbas.nationality);
-        System.out.println(abbas.dob);
-        System.out.println(Arrays.toString(abbas.passport));
+        System.out.println(user.name);
+        System.out.println(user.nationality);
+        System.out.println(user.dob);
+        System.out.println(" ");
+        System.out.println(Arrays.toString(user.passport));
     }
 }
