@@ -13,13 +13,16 @@ public class Workbook71 {
         System.out.print("What is your date of birth: ");
         user.dob = scan.nextLine();
 
+
         user.passport[0] = user.name;
         user.passport[1] = user.nationality;
         user.passport[2] = user.dob;
 
+        System.out.println(" ");
         System.out.println(user.name);
         System.out.println(user.nationality);
         System.out.println(user.dob);
+
         System.out.println(" ");
         System.out.println(Arrays.toString(user.passport));
     }
