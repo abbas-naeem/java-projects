@@ -4,10 +4,16 @@ public class Main {
 
         Car toyota = new Car("Toyota", 5000, 2019, "grey");
 
-        System.out.println("This " + bmw.make + " is worth £" + bmw.price +
-                ". It was built in " + bmw.year + ". It is " + bmw.color + ".\n");
-        System.out.println("This " + toyota.make + " is worth $" + toyota.price +
-                ". It was built in " + toyota.year + ". It is " + toyota.color + ".\n");
+        bmw.setColor("Jet Black");
+        toyota.setColor("Jet Black");
+
+        toyota.setPrice(toyota.getPrice() / 2);
+        bmw.setPrice(bmw.getPrice() / 2);
+
+        System.out.println("This " + bmw.getMake() + " is worth £" + bmw.getPrice() +
+                ". It was built in " + bmw.getYear() + ". It is " + bmw.getColor() + ".\n");
+        System.out.println("This " + toyota.getMake() + " is worth $" + toyota.getPrice() +
+                ". It was built in " + toyota.getYear() + ". It is " + toyota.getColor() + ".\n");
 
     }
 }
