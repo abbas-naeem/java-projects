@@ -1,4 +1,4 @@
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Workbook73 {
     public static void main(String[] args) {
@@ -28,12 +28,12 @@ public class Workbook73 {
         System.out.println("Passport Number: " + passengerInfo.getPassportNumber());
         System.out.println("Seat Number: " + passengerInfo.getSeatNumber());
 
-        String isInfoCorrect = scan.nextLine();
-        if (isInfoCorrect.equals("Yes") || isInfoCorrect.equals("yes")) {
-            System.out.println("This will now be forwarded to the database, we hope you enjoy your flight!");
-        } else if (isInfoCorrect.equals("No") || isInfoCorrect.equals("no") {
-
-        }
+//        String isInfoCorrect = scan.nextLine();
+//        if (isInfoCorrect.equals("Yes") || isInfoCorrect.equals("yes")) {
+//            System.out.println("This will now be forwarded to the database, we hope you enjoy your flight!");
+//        } else if (isInfoCorrect.equals("No") || isInfoCorrect.equals("no") {
+//
+//        }
 
     }
 }
