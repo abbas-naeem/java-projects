@@ -12,7 +12,7 @@ public class bankSystem {
 
         while (true) {
 
-            System.out.print("Would you like to make a transaction, deposit, withdrawal or get balance: ");
+            System.out.print("Would you like to make a transaction, deposit, withdrawal or info: ");
             String option = scan.nextLine();
 
             if (option.equals("transaction") || option.equals("Transaction")) {
@@ -64,6 +64,10 @@ public class bankSystem {
 
                 }
 
+            } else if (option.equals("info") || option.equals("Info")) {
+                System.out.println("The Account Number is: " + current.getAccountNumber());
+                System.out.println("The account holder is: " + current.getAccountHolder());
+                System.out.println("The balance is: " + current.getBalance());
             }
         }
     }
