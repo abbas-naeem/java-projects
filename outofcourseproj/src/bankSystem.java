@@ -12,7 +12,7 @@ public class bankSystem {
 
         while (true) {
 
-            System.out.print("Would you like to make a transaction, deposit or withdrawal: ");
+            System.out.print("Would you like to make a transaction, deposit, withdrawal or get balance: ");
             String option = scan.nextLine();
 
             if (option.equals("transaction") || option.equals("Transaction")) {
