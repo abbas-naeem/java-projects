@@ -34,6 +34,7 @@ public class bankSystem {
                     } else {
                         System.out.println(" ");
                         System.out.println("Your payment to " + accountHolderName + " has successfully been sent!");
+                        break;
                     }
                 }
 
