@@ -23,9 +23,8 @@ public class fibocannisqnce {
 
         sequence[1] = secondNumber;
 
-        for (int i = 2; i > sequenceSize; i++) {
-            int num = sequence[i] - sequence[i+1];
-            sequence[i] = num;
+        for (int i = 2; i < sequenceSize; i++) {
+            sequence[i] = sequence[i-1] + sequence[i-2];
         }
 
         System.out.println(Arrays.toString(sequence));
