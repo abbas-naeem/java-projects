@@ -5,11 +5,14 @@ public class bankSystem_Link {
 
     private double balance;
 
+    private String currentStatus;
 
-    public bankSystem_Link (int accountNumber, String accountHolder, double balance) {
+
+    public bankSystem_Link (int accountNumber, String accountHolder, double balance, String currentStatus) {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
         this.balance = balance;
+        this.currentStatus = currentStatus;
     }
 
     public int getAccountNumber() {
@@ -24,6 +27,9 @@ public class bankSystem_Link {
         return balance;
     }
 
+    public String getCurrentStatus() {
+        return currentStatus;
+    }
 
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
@@ -35,6 +41,10 @@ public class bankSystem_Link {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    public void setCurrentStatus(String currentStatus) {
+        this.currentStatus = currentStatus;
     }
 }
 
