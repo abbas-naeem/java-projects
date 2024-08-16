@@ -7,28 +7,31 @@ public class fibocannisqnce {
 
         System.out.println("Welcome to the Fibonacci Sequence Java Utility");
 
-        System.out.print("Please print your first number: ");
-        int firstNumber = scan.nextInt();
-        scan.nextLine();
+        while (true) {
 
-        System.out.print("Please print your second number: ");
-        int secondNumber = scan.nextInt();
+            System.out.print("Please print your first number: ");
+            int firstNumber = scan.nextInt();
+            scan.nextLine();
 
-        System.out.print("Please big do you want your sequence to be: ");
-        int sequenceSize = scan.nextInt();
+            System.out.print("Please print your second number: ");
+            int secondNumber = scan.nextInt();
 
-        int[] sequence = new int[sequenceSize];
+            System.out.print("Please big do you want your sequence to be: ");
+            int sequenceSize = scan.nextInt();
 
-        sequence[0] = firstNumber;
+            int[] sequence = new int[sequenceSize];
 
-        sequence[1] = secondNumber;
+            sequence[0] = firstNumber;
 
-        for (int i = 2; i < sequenceSize; i++) {
-            sequence[i] = sequence[i-1] + sequence[i-2];
+            sequence[1] = secondNumber;
+
+            for (int i = 2; i < sequenceSize; i++) {
+                sequence[i] = sequence[i - 1] + sequence[i - 2];
+            }
+
+            System.out.println(Arrays.toString(sequence));
+
         }
 
-        System.out.println(Arrays.toString(sequence));
-
     }
-
 }
