@@ -85,10 +85,10 @@ public class bankSystem {
                 System.out.println("The current is: " + current.getCurrentStatus());
             } else if (option.equals("disable") || option.equals("Disable")) {
                 System.out.println("This card has been deactivated");
-                current.setCurrentStatus("disabled");
+                current.setCurrentStatus("Disabled");
             } else if (option.equals("enable") || option.equals("Enable")) {
                 System.out.println("This card is now enabled");
-                current.setCurrentStatus("enabled");
+                current.setCurrentStatus("Enabled");
             }
         }
     }
