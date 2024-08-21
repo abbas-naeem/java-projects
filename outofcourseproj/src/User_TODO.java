@@ -20,51 +20,78 @@ public class User_TODO {
         System.out.println(" ");
         System.out.print("Thank you for registering with our service!");
 
+        ArrayList<String> todo = new ArrayList<>();
 
-
-        System.out.println(" ");
-        System.out.print("Here are the function: " +
-                "       - Type 'task' to add a task" +
-                "       - Type 'remove' to delete a current task" +
-                "       - Type 'change' to change a task" +
-                "       - Type 'view' to add a current task"
-        );
-        String option = scan.nextLine();
-
-        ArrayList todo = new ArrayList(2);
-
-        if (option.equals("task") || option.equals("Task")) {
-            System.out.print("Please enter the number of tasks you want to add: ");
-            int amount = scan.nextInt();
-
-            for (int i = 0; i < amount; i++) {
-                System.out.print(i + "): ");
-                String add = scan.nextLine();
-
-                todo.add(i);
-
-            }
-
-        } else if (option.equals("remove") || option.equals("Remove")) {
-            for (int i = 0; i < todo.size(); i++) {
-                String g = (String) todo.get(i);
-                System.out.println(i + g);
-            }
-
+        while (true) {
             System.out.println(" ");
-            System.out.print("Please enter the number of the task you want to remove: ");
-            scan.nextLine();
+            System.out.println("Here are the functions: " +
+                    "       - Type 'task' to add a task" +
+                    "       - Type 'remove' to delete a current task" +
+                    "       - Type 'change' to change a task" +
+                    "       - Type 'view' to view current tasks"
+            );
+            String option = scan.nextLine();
 
-        } else if (option.equals("change") || option.equals("Change")) {
+            if (option.equalsIgnoreCase("task")) {
+                System.out.print("Please enter the number of tasks you want to add: ");
+                int amount = scan.nextInt();
+                scan.nextLine(); // Consume newline
 
-        } else if (option.equals("view") || option.equals("View")) {
+                for (int i = 0; i < amount; i++) {
+                    System.out.print((i + 1) + "): ");
+                    String add = scan.nextLine();
+                    todo.add(add);
+                }
 
-        } else {
-            System.out.println("");
-            System.out.println("That is not a valid input!");
+            } else if (option.equalsIgnoreCase("remove")) {
+                for (int i = 0; i < todo.size(); i++) {
+                    String g = todo.get(i);
+                    System.out.println((i + 1) + ": " + g);
+                }
+
+                System.out.println(" ");
+                System.out.print("Please enter the number of the task you want to remove: ");
+                int removeIndex = scan.nextInt() - 1;
+                scan.nextLine(); // Consume newline
+
+                if (removeIndex >= 0 && removeIndex < todo.size()) {
+                    todo.remove(removeIndex);
+                    System.out.println("Task removed.");
+                } else {
+                    System.out.println("Invalid task number.");
+                }
+
+            } else if (option.equalsIgnoreCase("change")) {
+                for (int i = 0; i < todo.size(); i++) {
+                    String g = todo.get(i);
+                    System.out.println((i + 1) + ": " + g);
+                }
+
+                System.out.println(" ");
+                System.out.print("Please enter the number of the task you want to change: ");
+                int changeIndex = scan.nextInt() - 1;
+                scan.nextLine(); // Consume newline
+
+                if (changeIndex >= 0 && changeIndex < todo.size()) {
+                    System.out.print("Enter the new task: ");
+                    String newTask = scan.nextLine();
+                    todo.set(changeIndex, newTask);
+                    System.out.println("Task updated.");
+                } else {
+                    System.out.println("Invalid task number.");
+                }
+
+            } else if (option.equalsIgnoreCase("view")) {
+                System.out.println("Current tasks:");
+                for (int i = 0; i < todo.size(); i++) {
+                    String g = todo.get(i);
+                    System.out.println((i + 1) + ": " + g);
+                }
+
+            } else {
+                System.out.println("");
+                System.out.println("That is not a valid input!");
+            }
         }
-
-
-
     }
 }
