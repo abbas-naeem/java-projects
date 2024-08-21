@@ -1,8 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Car bmw = new Car("BMW", 8000, 2024, "grey");
+        String[] spareParts = new String[] {"Tires", "Keys"};
 
-        Car toyota = new Car("Toyota", 5000, 2019, "grey");
+        Car bmw = new Car("BMW", 8000, 2024, "grey", spareParts);
+
+        String[] carParts = bmw.getParts();
+
+        Car toyota = new Car("Toyota", 5000, 2019, "grey", spareParts);
+
+        spareParts[0] = "Filter";
 
         bmw.setColor("Jet Black");
         toyota.setColor("Jet Black");

@@ -52,4 +52,12 @@ public class Workbook73_linkData {
     public void setSeatNumber(int seatNumber) {
         this.seatNumber = seatNumber;
     }
+
+    public String toString() {
+        return "Name: " + this.name + ".\n" +
+                "DOB: " + this.dob + ".\n" +
+                "Passport Number: " + this.passportNumber + ".\n" +
+                "Seat Number: " + this.seatNumber + ".\n";
+    }
+
 }

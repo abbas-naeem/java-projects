@@ -22,11 +22,14 @@ public class Workbook73 {
 
         Workbook73_linkData passengerInfo = new Workbook73_linkData(name, nationality, dob, passportNumber, seatNumber);
 
-        System.out.println("Name: " + passengerInfo.getName());
-        System.out.println("Nationality: " + passengerInfo.getNationality());
-        System.out.println("Date Of Birth: " + passengerInfo.getDob());
-        System.out.println("Passport Number: " + passengerInfo.getPassportNumber());
-        System.out.println("Seat Number: " + passengerInfo.getSeatNumber());
+//        System.out.println("Name: " + passengerInfo.getName());
+//        System.out.println("Nationality: " + passengerInfo.getNationality());
+//        System.out.println("Date Of Birth: " + passengerInfo.getDob());
+//        System.out.println("Passport Number: " + passengerInfo.getPassportNumber());
+//        System.out.println("Seat Number: " + passengerInfo.getSeatNumber());
+
+        System.out.println("");
+        System.out.println(passengerInfo.toString());
 
 
 
